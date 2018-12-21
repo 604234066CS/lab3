@@ -8,7 +8,16 @@ import { NavController } from 'ionic-angular';
 export class ContactPage {
 
   constructor(public navCtrl: NavController) {
+  
+  }
+  gotoHome(){
+    this.navCtrl.push(ContactPage);
+  
+    }
+
+  goPrev(){
+    this.navCtrl.pop();
+
 
   }
-
 }
